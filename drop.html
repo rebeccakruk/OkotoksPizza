@@ -5,9 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Okotoks Pizza Place</title>
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/drop.css" />
     </head>
     <body>
+        <header>
+            <img id="logo" src="/media/logo.png" alt="logo" />
+            <h2>Okotoks Pizza and Pasta</h2>
+            <h3><a href="tel:403-555-6767">403-555-6767</a></h3>
+        </header>
         <div tabindex="0" id="menu">
             <!-- label with tab index, then when we do fw, it will display. if it was a link and it was clicked, the menu would collapse, which is a problem. Solved using pointer events. When you're clicking within the menu you want the pointer events disable, but then when you're clikcing on the dropdown you want to enable the pointer events again. Now you're free to click within the menu, nothing happens, it will still close. -->
             <label>
@@ -17,11 +22,14 @@
             </label>
             <div id="dropdown">
                 <!-- we want this hidden until someone clicks on this menu -->
-                <li>link1</li>
-                <li>link 2</li>
-                <li>link 3</li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
             </div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam harum in aut totam natus? Est sunt dolor aliquam necessitatibus.</div>
         </div>
+        </header>
+        <main>
+            <p>There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep coming back, again, again, and again.</p>
+            <a class="button" href="about.html">Learn More</a>
+        </main>
     </body>
 </html>

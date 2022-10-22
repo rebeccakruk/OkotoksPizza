@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+html {
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo {
+    height: 10vh;
+}
+
 #menu {
     user-select: none;
     /* prevents double clicking from selecting stuff */
@@ -13,7 +21,6 @@
     border-radius: 10px;
     background: #0e2431; */
 }
-
 .line {
     display: block;
     height: 4px;
@@ -25,23 +32,31 @@
 
 
 #dropdown {
-    background-color: rebeccapurple;
+    background-color: darkgray;
     display: none;
     position: absolute;
-    width: 100vw;
-    height: 50vh;
+        width: 100vw;
+        height: 50vh;
 }
-
 /* focus within. The checkbox hack doesn't work */
 
 #menu:focus-within {
     pointer-events: none;
 }
 
-#menu:focus-within #dropdown {
+#menu:focus-within #dropdown{
     /* when fw is active, the child of it */
     display: block;
     pointer-events: all;
 }
 
+.button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
 /* it needs to have a tab index. when you click tab it starts going through different things. If it was assigned a different number, it will tab through everything */
+
+/* there is a property to make scolling smooth. it's called smooth-scrolling */

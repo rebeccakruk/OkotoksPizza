@@ -4,9 +4,53 @@
 }
 
 html {
-  background-color: blanchedalmond;
+  background-color: rgb(107, 99, 99);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #logo {
-  height: 25vh;
-}/*# sourceMappingURL=style.css.map */
+  width: 10vw;
+}
+
+header {
+  display: grid;
+  min-height: 20px;
+  background-color: #000;
+  border: solid 2px black;
+  text-align: center;
+  display: grid;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#menu:focus-within {
+  pointer-events: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:focus-within > ul {
+  display: flex;
+}
+
+#menu a {
+  display: inline-block;
+  padding: 0.4rem;
+}
+
+.dropdown > a {
+  display: inline-block;
+  padding: 0.8rem;
+  color: limegreen;
+}
+
+/* it needs to have a tab index. when you click tab it starts going through different things. If it was assigned a different number, it will tab through everything *//*# sourceMappingURL=style.css.map */

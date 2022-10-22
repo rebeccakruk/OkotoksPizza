@@ -1,0 +1,70 @@
+.mainmenu {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: limegreen;
+    border:solid hotpink 2px;
+}
+
+// .line1 {
+//     width: 35px;
+//     height: 5px;
+//     background-color: dodgerblue;
+//     margin: 6px;
+// }
+
+// .line2 {
+//     width: 35px;
+//     height: 5px;
+//     background-color: dodgerblue;
+//     margin: 6px;
+// }
+
+// .line3 {
+//     width: 35px;
+//     height: 5px;
+//     background-color: dodgerblue;
+//     margin: 6px;
+// }
+#mainmenu {
+    user-select: none;
+}
+
+#mainmenu {
+    pointer-events: none;
+}
+
+#mainmenu:focus-within #dropdown {
+    /* when fw is active, the child of it */
+    display: block;
+    pointer-events: all;
+}
+
+
+// .dropdown {
+//     position: relative;
+// }
+
+// #dropdown > ul {
+//     list-style: none;
+//     display: none;
+//     flex-direction: column;
+//     position: absolute;
+//     background-color: #fff;
+//     border: solid 2px #000;
+// }
+
+// .dropdown:focus-within > ul {
+//     display: flex;
+// }
+
+// .mainmenu {
+//     display: inline-block;
+//     padding: 0.6rem;
+// }
+
+// .dropdown > a {
+//     display: inline-block;
+//     padding: 0.8rem;
+//     color: #000;
+// }

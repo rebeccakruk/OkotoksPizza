@@ -1,0 +1,24 @@
+.mainmenu {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: limegreen;
+  border: solid hotpink 2px;
+}
+
+#mainmenu {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#mainmenu {
+  pointer-events: none;
+}
+
+#mainmenu:focus-within #dropdown {
+  /* when fw is active, the child of it */
+  display: block;
+  pointer-events: all;
+}/*# sourceMappingURL=style2.css.map */
