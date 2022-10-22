@@ -4,23 +4,12 @@
 }
 
 html {
-  background-color: rgb(107, 99, 99);
+  background-color: bisque;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #logo {
-  width: 10vw;
-}
-
-header {
-  display: grid;
-  min-height: 20px;
-  background-color: #000;
-  border: solid 2px black;
-  text-align: center;
-  display: grid;
-  color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 10vh;
 }
 
 #menu {
@@ -28,29 +17,41 @@ header {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  /* prevents double clicking from selecting stuff */
+  /* in the real website, you don't want the rest to be pushed down, you want it to be overlay. How do we do that? What's the secret here? */
+  /* display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431; */
 }
 
+.line {
+  display: block;
+  height: 4px;
+  width: 20px;
+  border-radius: 10px;
+  background: #0e2431;
+  margin: 6px;
+}
+
+#dropdown {
+  background-color: rebeccapurple;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+}
+
+/* focus within. The checkbox hack doesn't work */
 #menu:focus-within {
   pointer-events: none;
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown:focus-within > ul {
-  display: flex;
-}
-
-#menu a {
-  display: inline-block;
-  padding: 0.4rem;
-}
-
-.dropdown > a {
-  display: inline-block;
-  padding: 0.8rem;
-  color: limegreen;
+#menu:focus-within #dropdown {
+  /* when fw is active, the child of it */
+  display: block;
+  pointer-events: all;
 }
 
 /* it needs to have a tab index. when you click tab it starts going through different things. If it was assigned a different number, it will tab through everything *//*# sourceMappingURL=style.css.map */
