@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo {
+  height: 10vh;
+  display: inline-block;
+}/*# sourceMappingURL=gallery.css.map */
