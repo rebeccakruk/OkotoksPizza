@@ -101,17 +101,17 @@ header {
   top: 100px;
 }
 
-gallery {
+#articles {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 250px 200px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
-
-#first {
-  max-height: 250px;
+#articles img {
+  width: 100%;
+  max-height: 15vh;
 }
-
-gallery > img {
-  max-width: 250px;
-  height: 250px;
+#articles div {
+  text-align: center;
+}
+#articles div > p:nth-of-type(2) {
+  font-size: 0.75em;
 }/*# sourceMappingURL=gallery.css.map */
