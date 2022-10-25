@@ -10,12 +10,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header>
-            <img id="logo" src="/media/logo.png" alt="logo" />
-            <h2>Okotoks Pizza and Pasta</h2>
+            <img id="logo" src="/media/logo1.png" alt="logo" />
+            <div id="banner"><h2>Okotoks Pizza and Pasta</h2>
             <h3><a href="tel:403-555-6767">403-555-6767</a></h3>
+            </div>
             <!-- </header> -->
             <div tabindex="0" id="menu">
                 <!-- label with tab index, then when we do fw, it will display. if it was a link and it was clicked, the menu would collapse, which is a problem. Solved using pointer events. When you're clicking within the menu you want the pointer events disable, but then when you're clikcing on the dropdown you want to enable the pointer events again. Now you're free to click within the menu, nothing happens, it will still close. -->
@@ -34,11 +38,11 @@
             </div>
         </header>
         <main>
-            <h4>About</h4>
+            <h4 class="titlestyle">About</h4>
             <p>There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep coming back, again, again, and again.</p>
             <a class="button" href="about.html">Learn More</a>
             <section id="hoursandlocation">
-                <h4>Hours and Location</h4>
+                <h4 class="titlestyle">Hours and Location</h4>
                 <p>57 Riverside Gate, Okotoks, AB T1S 1B3</p>
                 <a href="tel:403-555-6767">403-555-6767</a>
                 <a href="mailto:okotokspizza@gmail.com">okotokspizza@gmail.com</a>
@@ -48,14 +52,17 @@
                 <p>3:00 - 2:00 am</p>
                 <p>Sunday:</p>
                 <p>3:00 - 10:00 pm</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.7946472915255!2d-113.9808814!3d50.723748799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53719833e0cb5bdb%3A0xe0b458ffc25d1f1a!2sDenny&#39;s!5e0!3m2!1sen!2sca!4v1666476609299!5m2!1sen!2sca" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.7946472915255!2d-113.9808814!3d50.723748799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53719833e0cb5bdb%3A0xe0b458ffc25d1f1a!2sDenny&#39;s!5e0!3m2!1sen!2sca!4v1666476609299!5m2!1sen!2sca" name="maplink" width="100%" height="450" style="border: 0" allowfullscnamereen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </main>
         <footer>
-            <div class="social">
-                <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://snapchat.com" target="_blank" class="fa fa-snapchat-ghost"></a>
+            <p>2022 All Rights Reserved</p>
+            <li class="social">
+                <ul class="icons"></ul>
+                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
             </div>
         </footer>
     </body>

@@ -1,1 +1,110 @@
 @use "general";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+$section_height: 50vh;
+$font_large: 2rem;
+$font_small: 1rem;
+$title_style: 38px;
+
+.font-small {
+    font-size: $font_small;
+    font-family: nothing you could do;
+}
+
+.titlestyle {
+    font-size: $title_style;
+    color: #000;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+// the three items below are on the '_general.scss'
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo {
+    height: 10vh;
+} */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Diplomata SC', cursive;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.5em;
+}
+
+
+
+#menu {
+    user-select: none;
+    /* prevents double clicking from selecting stuff */
+    /* in the real website, you don't want the rest to be pushed down, you want it to be overlay. How do we do that? What's the secret here? */
+    /* display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431; */
+}
+
+.line {
+    display: block;
+    height: 4px;
+    width: 20px;
+    border-radius: 10px;
+    background: #AF1321;
+    margin: 6px;
+}
+
+#dropdown {
+    background-color: darkgray;
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+}
+
+/* focus within. The checkbox hack doesn't work */
+
+#menu:focus-within {
+    pointer-events: none;
+}
+
+#menu:focus-within #dropdown {
+    /* when fw is active, the child of it */
+    display: block;
+    pointer-events: all;
+}
+
+.button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    margin: 100px;
+    text-decoration: none;
+    align-items: flex;
+    top: 100px;
+}
+
+
+gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 200px;
+}
+
+#first {
+    max-height: 250px;
+}
+
+gallery > img {
+    max-width: 250px;
+    height: 250px;
+}

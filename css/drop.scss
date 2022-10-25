@@ -1,5 +1,21 @@
 @use "general";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+$section_height: 50vh;
+$font_large: 2rem;
+$font_small: 1rem;
+$title_style: 38px;
 
+.font-small {
+    font-size: $font_small;
+    font-family: nothing you could do;
+}
+
+.titlestyle {
+    font-size: $title_style;
+    color: #000;
+    font-family: 'Nothing You Could Do', cursive;
+}
+// the three items below are on the '_general.scss'
 /* * {
     margin: 0;
     padding: 0;
@@ -15,11 +31,16 @@ html {
 
 header {
     display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
     background-color: #000;
     color: #fff;
+    font-family: 'Diplomata SC', cursive;
     text-align: center;
-
+    justify-content: center;
+    font-size: 0.5em;
 }
+
+
 
 #menu {
     user-select: none;
@@ -63,41 +84,62 @@ header {
     background-color: #000;
     color: #fff;
     padding: 15px 25px;
+    margin: 100px;
     text-decoration: none;
+    align-items: flex;
+    top: 100px;
+}
+
+.map {
+    overflow: hidden;
     position: relative;
+    height: 0;
 }
-
-h4 {
-    font-size: 38px;
-    color: #000;
-    font-family: 'Nothing You Could Do', cursive;
-
-}
+// h4 {
+//     font-size: 38px;
+//     color: #000;
+//     font-family: 'Nothing You Could Do', cursive;
+// }
 
 // instructions for how to get socials were available on W3Schools, which is where the css below came from: https: //www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
+// .fa {
+//     padding: 10px;
+//     font-size: 30px;
+//     width: 50px;
+//     text-align: center;
+//     text-decoration: none;
+//     margin: 5px 2px;
+// }
+// .fa-facebook {
+//     background: #3B5998;
+//     color: white;
+// }
 
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
+// .fa-instagram {
+//     background: #125688;
+//     color: white;
+// }
 
-.fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+// .fa-snapchat-ghost {
+//     background: #fffc00;
+//     color: white;
+//     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+// }
 /* it needs to have a tab index. when you click tab it starts going through different things. If it was assigned a different number, it will tab through everything */
 
 /* there is a property to make scolling smooth. it's called smooth-scrolling */
+
+.social {
+    width: 400px;
+    text-align: center;
+    // margin: 30vh auto;
+}
+
+.icons {
+    list-style: none;
+    margin: 0.8em;
+    li{
+        display: inline-block;
+    }
+}
+// add hover effect after media query

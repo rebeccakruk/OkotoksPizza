@@ -5,17 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gallery</title>
-        <link rel="stylesheet" href="/css/drop.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
     </head>
     <body>
         <header>
-            <img id="logo" src="/media/logo.png" alt="logo" />
-            <h2>Okotoks Pizza and Pasta</h2>
-            <h3><a href="tel:403-555-6767">403-555-6767</a></h3>
+            <img id="logo" src="/media/logo1.png" alt="logo" />
+            <div id="banner">
+                <h2>Okotoks Pizza and Pasta</h2>
+                <h3><a href="tel:403-555-6767">403-555-6767</a></h3>
+            </div>
             <!-- </header> -->
             <div tabindex="0" id="menu">
                 <!-- label with tab index, then when we do fw, it will display. if it was a link and it was clicked, the menu would collapse, which is a problem. Solved using pointer events. When you're clicking within the menu you want the pointer events disable, but then when you're clikcing on the dropdown you want to enable the pointer events again. Now you're free to click within the menu, nothing happens, it will still close. -->
@@ -34,7 +38,7 @@
             </div>
         </header>
         <gallery>
-            <img src="/media/pizzawithoven.jpg" alt="pizza in front of pizza oven" />
+            <img id="first" src="/media/pizzawithoven.jpg" alt="pizza in front of pizza oven" />
             <img src="/media/sauceondough.avif" alt="pizza sauce on fresh dough" />
             <img src="/media/mushroom.avif" alt="mushrooms on pizza" />
             <img src="media/pizzasliced.jpg" alt="sliced pizza" />
