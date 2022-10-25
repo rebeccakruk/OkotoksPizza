@@ -6,7 +6,7 @@
 
 html {
   background-color: #FEE071;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "nothing you could do about it";
 }
 
 #logo {
@@ -17,7 +17,6 @@ html {
 
 .font-small {
   font-size: 1rem;
-  font-family: nothing you could do;
 }
 
 .titlestyle {
@@ -68,7 +67,7 @@ header {
   height: 4px;
   width: 20px;
   border-radius: 10px;
-  background: #AF1321;
+  background: #000;
   margin: 6px;
 }
 

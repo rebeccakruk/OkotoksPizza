@@ -6,7 +6,7 @@
 
 html {
   background-color: #FEE071;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "nothing you could do about it";
 }
 
 #logo {
@@ -17,12 +17,18 @@ html {
 
 .font-small {
   font-size: 1rem;
-  font-family: nothing you could do;
+  font-weight: 900;
 }
 
 .titlestyle {
   font-size: 20px;
   color: #000;
+  font-family: "Nothing You Could Do", cursive;
+}
+
+.titlestyleb {
+  font-size: 20px;
+  color: #fff;
   font-family: "Nothing You Could Do", cursive;
 }
 
@@ -38,18 +44,23 @@ html {
 #logo {
     height: 10vh;
 } */
-header {
+nav {
+  position: fixed;
+  border: 2px solid black;
+  z-index: 40;
   display: grid;
-  grid-template-columns: 1fr 1fr 4fr;
-  background-color: #000;
-  color: #fff;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 0.4rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #fff;
+  color: #000;
   font-family: "Diplomata SC", cursive;
   text-align: center;
   justify-content: center;
   font-size: 0.5em;
-}
-header #banner {
-  color: #fff;
 }
 
 #menu {
@@ -57,6 +68,9 @@ header #banner {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  position: fixed;
+  right: 0;
+  top: 5vh;
   /* prevents double clicking from selecting stuff */
   /* in the real website, you don't want the rest to be pushed down, you want it to be overlay. How do we do that? What's the secret here? */
   /* display: block;
@@ -69,18 +83,48 @@ header #banner {
 .line {
   display: block;
   height: 4px;
-  width: 20px;
+  width: 9vw;
   border-radius: 10px;
-  background: #AF1321;
-  margin: 6px;
+  background: #000;
+  margin: 8px;
+  margin-right: 20px;
+}
+
+h2 {
+  align-self: center;
+  justify-self: center;
+  font-size: 1rem;
+}
+
+h3 {
+  display: block;
+  align-self: center;
+  margin-top: 50%;
 }
 
 #dropdown {
-  background-color: darkgray;
+  background-color: #FEE071;
   display: none;
   position: absolute;
+  white-space: 15px;
+  left: 100px;
+  position: relative;
   width: 100vw;
   height: 50vh;
+}
+#dropdown > li {
+  color: #000;
+  clear: both;
+  background-color: #FEE071;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  font-family: "diplomata sc";
+  padding: 30px;
+  white-space: 20px;
+}
+#dropdown > li > a {
+  text-decoration: none;
 }
 
 /* focus within. The checkbox hack doesn't work */
@@ -94,20 +138,124 @@ header #banner {
   pointer-events: all;
 }
 
-.button {
-  background-color: #000;
-  color: #fff;
-  padding: 15px 25px;
-  margin: 100px;
-  text-decoration: none;
-  align-items: flex;
-  top: 100px;
+.slideshow {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  top: 25pt;
+  bottom: 5px;
+}
+.slideshow img {
+  position: absolute;
+  top: 15vh;
+  max-width: 400px;
+  min-height: 300px;
+  -webkit-animation-name: frontpagegallery;
+          animation-name: frontpagegallery;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.slideshow img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.slideshow img:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.slideshow img:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.slideshow img:nth-of-type(4) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
-.map {
-  overflow: hidden;
+@-webkit-keyframes frontpagegallery {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes frontpagegallery {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#about {
+  height: 30vh;
   position: relative;
-  height: 0;
+  padding: 10px;
+  margin-top: 100px;
+  background-color: #000;
+  color: #fff;
+}
+
+.button {
+  background-color: #000;
+  border: #fff 2px solid;
+  color: #fff;
+  padding: 10px 20px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+.button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+#hoursandlocation {
+  position: static;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+#hoursandlocation > p {
+  font-style: 1rem;
+  font-weight: 800;
+  padding: 0.5em;
+}
+#hoursandlocation > a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 0.5em;
 }
 
 /* it needs to have a tab index. when you click tab it starts going through different things. If it was assigned a different number, it will tab through everything */

@@ -1,18 +1,25 @@
 @use "general";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-$section_height: 50vh;
+$section_height: 30vh;
 $font_large: 2rem;
 $font_small: 1rem;
 $title_style: 20px;
 
 .font-small {
     font-size: $font_small;
-    font-family: nothing you could do;
+    font-weight: 900;
+    // font-family: nothing you could do;
 }
 
 .titlestyle {
     font-size: $title_style;
     color: #000;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.titlestyleb {
+    font-size: $title_style;
+    color: #fff;
     font-family: 'Nothing You Could Do', cursive;
 }
 // the three items below are on the '_general.scss'
@@ -29,24 +36,31 @@ html {
     height: 10vh;
 } */
 
-header {
+nav {
+    position: fixed;
+    border: 2px solid black;
+    z-index: 40;
     display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
-    background-color: #000;
-    color: #fff;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0.4rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #fff;
+    color: #000;
     font-family: 'Diplomata SC', cursive;
     text-align: center;
     justify-content: center;
     font-size: 0.5em;
-    #banner {
-        color: #fff;
-
     }
-}
-
 
 #menu {
     user-select: none;
+    position: fixed;
+    // bottom: 50px;
+    right: 0;
+    top: 5vh;
     /* prevents double clicking from selecting stuff */
     /* in the real website, you don't want the rest to be pushed down, you want it to be overlay. How do we do that? What's the secret here? */
     /* display: block;
@@ -58,19 +72,48 @@ header {
 .line {
     display: block;
     height: 4px;
-    width: 20px;
+    width: 9vw;
     border-radius: 10px;
-    background: #AF1321;
-    margin: 6px;
+    background: #000;
+    margin: 8px;
+    margin-right: 20px;
+}
+h2 {
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
 }
 
+h3 {
+    display: block;
+    align-self: center;
+    margin-top: 50%;
+}
 #dropdown {
-    background-color: darkgray;
+    background-color: #FEE071;
     display: none;
     position: absolute;
+    white-space: 15px;
+    left: 100px;
+    position: relative;
     width: 100vw;
     height: 50vh;
+    > li{
+        color: #000;
+        clear:both;
+        background-color: #FEE071;
+        text-decoration: none;
+        display: block;
+        font-size: $font_small;
+        font-family: 'diplomata sc';
+        padding: 30px;
+        white-space: 20px;
+    > a {
+        text-decoration: none;
+    }
+    }
 }
+
 /* focus within. The checkbox hack doesn't work */
 
 #menu:focus-within {
@@ -83,21 +126,113 @@ header {
     pointer-events: all;
 }
 
-.button {
-    background-color: #000;
-    color: #fff;
-    padding: 15px 25px;
-    margin: 100px;
-    text-decoration: none;
-    align-items: flex;
-    top: 100px;
+.slideshow {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: 25pt;
+    bottom: 5px;
+
+    img {
+    position: absolute;
+    top: 15vh;
+    // bottom: 15vh;
+    max-width: 400px;
+    min-height: 300px;
+    animation-name: frontpagegallery;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    &:nth-of-type(1) {
+    animation-delay: 6s;
+    }
+    &:nth-of-type(2) {
+    animation-delay: 4s;
+    }
+    &:nth-of-type(3) {
+    animation-delay: 2s;
+    }
+    &:nth-of-type(4) {
+    animation-delay: 0s;
+    }
+}
+}
+@keyframes frontpagegallery {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.map {
-    overflow: hidden;
+#about {
+    height: $section_height;
     position: relative;
-    height: 0;
+    padding: 10px;
+    margin-top: 100px;
+    background-color: #000;
+    color: #fff;
+
 }
+
+.button {
+    background-color: #000;
+    border: #fff 2px solid;
+    color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-80%, -80%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all .5s ease;
+    text-transform: uppercase;
+    &:hover{
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+#hoursandlocation {
+    // height: $section_height;
+    position: static;
+    text-align: center;
+    padding: 10px;
+    // margin-top: 10vh;
+    background-color: #fff;
+    color: #000;
+    > p {
+        font-style: $font_small;
+        font-weight: 800;
+        padding: 0.5em;
+    }
+    > a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        padding: 0.5em;
+    }
+
+
+
+}
+// .map {
+//     overflow: hidden;
+//     // position: relative;
+//     height: 0;
+// }
 // h4 {
 //     font-size: 38px;
 //     color: #000;
