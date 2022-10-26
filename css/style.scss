@@ -278,4 +278,48 @@ h3 {
         display: inline-block;
     }
 }
+
 // add hover effect after media query
+
+footer {
+        border: 2px solid black;
+        display: grid;
+        margin: 0.4rem;
+        padding-bottom: 0.2rem;
+        padding-top: 0.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: #fff;
+        color: #000;
+        // text-align: center;
+        // justify-content: center;
+        font-size: 0.5em;
+    text-align: center;
+    .icons {
+            color: #000;
+            text-transform: uppercase;
+            display: inline-flexbox;
+            margin-right:0.5em;
+            a   {
+                text-decoration: none;
+                color: #000;
+                font-size: 1rem;
+                justify-content: space-between 5px;
+                padding: 0;
+                }
+            }
+        >p {
+            font-size: 0.8rem;
+            }
+}
+
+
+
+// .icons {
+//     width: 100%;
+//     font-size: $font_small;
+// }
+
+// ul {
+//     text-decoration: none;
+// 
