@@ -15,7 +15,7 @@ html {
 }
 
 .font-small {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 900;
 }
 
@@ -31,10 +31,14 @@ html {
   font-family: "Nothing You Could Do", cursive;
 }
 
+body {
+  background-image: url(https://images.unsplash.com/photo-1582284540020-8acbe03f4924);
+}
+
 nav {
   position: fixed;
   border: 2px solid black;
-  z-index: 40;
+  z-index: 41;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   margin: 0.4rem;
@@ -83,7 +87,7 @@ h3 {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 2.2;
 }
 
 .description {
@@ -108,7 +112,7 @@ p {
 #dropdown > li > a {
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "diplomata sc";
 }
 
@@ -124,13 +128,15 @@ p {
 
 .foodmenu {
   position: relative;
+  z-index: 40;
   text-align: center;
   padding: 10px;
-  background-color: #FEE071;
   margin-left: 7.5px;
   margin-right: 7.5px;
   top: 20vh;
-  bottom: 10vh;
+}
+.foodmenu > h4 {
+  color: #fff;
 }
 
 .drink {
@@ -147,6 +153,7 @@ p {
   border-radius: 3px;
   transition: all 0.5s ease;
   text-transform: uppercase;
+  top: 3vh;
 }
 .drink:hover {
   color: #000;
@@ -159,14 +166,14 @@ p {
   color: #fff;
   padding: 8px 16px;
   position: relative;
-  top: 80%;
   left: -7%;
   transform: translate(-50%, -50%);
   text-decoration: none;
   border-radius: 3px;
   transition: all 0.5s ease;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  top: 3vh;
 }
 .food:hover {
   color: #000;
@@ -174,16 +181,31 @@ p {
 }
 
 article {
-  padding-top: 25vh;
+  top: 20vh;
+  position: relative;
   text-align: center;
+  left: 5%;
+  background-color: rgb(43, 45, 47);
+  box-sizing: border-box;
+  padding-top: 0.1vh;
+  width: 90vw;
+  color: #fff;
 }
 
 .menuhead {
-  border-bottom: #000 2px solid;
+  border-bottom: #fff 2px solid;
   text-align: right;
-  color: black;
-  padding: 0.5em 1rem;
+  display: grid;
+  color: #fff;
+  margin: 2rem;
+}
+.menuhead > h2 {
+  text-align: left;
+  color: #fff;
 }
 .menuhead > p {
   font-style: italic;
+}
+.menuhead > p {
+  border-top: #fff;
 }/*# sourceMappingURL=menu.css.map */
