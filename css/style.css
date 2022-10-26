@@ -1,7 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 * {
   margin: 0;
-  padding: 0;
 }
 
 html {
@@ -109,22 +108,19 @@ h3 {
   white-space: 15px;
   left: 100px;
   position: relative;
-  width: 100vw;
-  height: 50vh;
+  width: 150vw;
+  height: 55vh;
 }
 #dropdown > li {
-  color: #000;
-  clear: both;
-  background-color: #FEE071;
-  text-decoration: none;
   display: block;
-  font-size: 1rem;
-  font-family: "diplomata sc";
   padding: 30px;
   white-space: 20px;
 }
 #dropdown > li > a {
   text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-family: "diplomata sc";
 }
 
 /* focus within. The checkbox hack doesn't work */

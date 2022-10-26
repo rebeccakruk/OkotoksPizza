@@ -96,20 +96,18 @@ h3 {
     white-space: 15px;
     left: 100px;
     position: relative;
-    width: 100vw;
-    height: 50vh;
+    width: 150vw;
+    height: 55vh;
     > li{
-        color: #000;
-        clear:both;
-        background-color: #FEE071;
-        text-decoration: none;
+        // text-decoration: none;
         display: block;
-        font-size: $font_small;
-        font-family: 'diplomata sc';
         padding: 30px;
         white-space: 20px;
-    > a {
-        text-decoration: none;
+        > a {
+            text-decoration: none;
+            color: #000;
+            font-size: $font_small;
+            font-family: 'diplomata sc';
     }
     }
 }
