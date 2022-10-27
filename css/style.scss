@@ -276,48 +276,39 @@ nav {
     }
 }
 
-article {
-    // top: 20vh;
-    // position: relative;
-    text-align: center;
-    // left: 5%;
+.menuitems {
+    text-align: left;
     background-color: rgb(43, 45, 47);
     box-sizing: border-box;
-    padding-top: 0.1vh;
     padding: 0.1vh 5vw;
     width: 90vw;
-    // right: 0px;
     color: #fff;
     hr {
         color:#fff;
         margin-top: 20px;
         margin-bottom: 12px;
     }
-}
-
-.menuhead {
-    border-bottom: #fff 2px solid;
-    // box-sizing: border-box;
-    text-align: right;
-    display: grid;
-    color: #fff;
-    // padding: 1em 1rem;
-    margin: 2rem;
-    // > div {border-bottom: #fff 1px solid;}
-
-    >h2 {
-        text-align: left;
+        .menuhead {
+        border-bottom: #fff 2px solid;
+        // box-sizing: border-box;
+        text-align: right;
+        display: grid;
         color: #fff;
-    }
+        padding: 1em 1em;
+        margin: 2rem;
+        // > div {border-bottom: #fff 1px solid;}
 
-    >p {
-        font-style: italic;
-    }
+            >h2 {
+                text-align: left;
+                color: #fff;
+            }
 
-    >p {
-        border-top: #fff;
-    }
-}// add hover effect after media query
+                >p {
+                    font-style: italic;
+                    border-top: #fff;
+                }
+        }// add hover effect after media query
+}
 
 footer {
         border: 2px solid black;
@@ -364,14 +355,7 @@ footer {
         #menu {
             display: none;
         }
-    // #menu:focus-within {
-    //                 pointer-events: none;
-    // }
-    // #menu:focus-within #dropdown {
-    // /* when fw is active, the child of it */
-    //         display: block;
-    //         pointer-events: all;
-// }
+ 
         #pcview {
             display: initial;
         }
@@ -396,18 +380,13 @@ footer {
             //     }
     }
 }
-.mainpage {
-    // display: grid;
-    // grid-template-columns: auto;
-    background-color: hotpink;
-}
+
 #about {
     // height: $section_height;
     padding: 10px;
     height: 200px;
     background-color: #000;
     color: #fff;
-
 }
 
 .button {
@@ -489,7 +468,7 @@ footer {
         //         display: block;
         //         pointer-events: all;
         // }
-        #tabletview {
+        #pcview {
             display: initial;
         }
 

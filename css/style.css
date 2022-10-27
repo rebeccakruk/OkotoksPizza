@@ -286,36 +286,33 @@ nav > li {
   background-color: #fff;
 }
 
-article {
-  text-align: center;
+.menuitems {
+  text-align: left;
   background-color: rgb(43, 45, 47);
   box-sizing: border-box;
-  padding-top: 0.1vh;
   padding: 0.1vh 5vw;
   width: 90vw;
   color: #fff;
 }
-article hr {
+.menuitems hr {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 12px;
 }
-
-.menuhead {
+.menuitems .menuhead {
   border-bottom: #fff 2px solid;
   text-align: right;
   display: grid;
   color: #fff;
+  padding: 1em 1em;
   margin: 2rem;
 }
-.menuhead > h2 {
+.menuitems .menuhead > h2 {
   text-align: left;
   color: #fff;
 }
-.menuhead > p {
+.menuitems .menuhead > p {
   font-style: italic;
-}
-.menuhead > p {
   border-top: #fff;
 }
 
@@ -374,10 +371,6 @@ footer > p {
     display: none;
   }
 }
-.mainpage {
-  background-color: hotpink;
-}
-
 #about {
   padding: 10px;
   height: 200px;
@@ -433,7 +426,7 @@ footer > p {
   #menu {
     display: none;
   }
-  #tabletview {
+  #pcview {
     display: initial;
   }
   .header-copy {
