@@ -3,7 +3,7 @@
 $section_height: 30vh;
 $font_large: 2rem;
 $font_small: 0.8rem;
-$title_style: 20px;
+$title_style: 1.5rem;
 
 .font-small {
     font-size: $font_small;
@@ -22,19 +22,6 @@ $title_style: 20px;
     color: #fff;
     font-family: 'Nothing You Could Do', cursive;
 }
-// the three items below are on the '_general.scss'
-/* * {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    background-color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#logo {
-    height: 10vh;
-} */
 
 nav {
     position: fixed;
@@ -53,6 +40,9 @@ nav {
     text-align: center;
     justify-content: center;
     font-size: 0.5em;
+    >a {
+        font-size: $font_large;
+    }
     }
 
 #menu {
@@ -92,12 +82,12 @@ h3 {
 #dropdown {
     background-color: #FEE071;
     display: none;
-    position: absolute;
+    // position: absolute;
     white-space: 15px;
     left: 100px;
-    position: relative;
+    // position: relative;
     width: 150vw;
-    height: 55vh;
+    height: 60vh;
     > li{
         // text-decoration: none;
         display: block;
@@ -106,8 +96,9 @@ h3 {
         > a {
             text-decoration: none;
             color: #000;
-            font-size: $font_small;
-            font-family: 'diplomata sc';
+            font-size: 25px;
+            font-family: 'Roboto';
+            z-index: 99;
     }
     }
 }
@@ -204,8 +195,6 @@ h3 {
 }
 
 #hoursandlocation {
-    // height: $section_height;
-    position: static;
     text-align: center;
     padding: 10px;
     // margin-top: 10vh;
@@ -282,7 +271,7 @@ h3 {
 .foodmenu {
     // border: 1px solid black;
     position: relative;
-    z-index: 40;
+    // z-index: 40;
     text-align: center;
     padding: 10px;
     // background-color: #FEE071;
@@ -420,7 +409,30 @@ footer {
             }
 }
 
-
+@media only screen and (min-width:6768px) {
+    nav {
+            // position: fixed;
+            border: 2px solid black;
+            z-index: 40;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            margin: 0.4rem;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background-color: #fff;
+            color: #000;
+            font-family: 'Diplomata SC', cursive;
+            text-align: center;
+            justify-content: center;
+            font-size: 0.5em;
+    
+            >a {
+                font-size: $font_large;
+            }
+        }
+}
 
 // .icons {
 //     width: 100%;
