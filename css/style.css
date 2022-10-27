@@ -32,25 +32,27 @@ html {
 }
 
 nav {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   border: 2px solid black;
-  z-index: 40;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  margin: 0.4rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
   background-color: #fff;
   color: #000;
   font-family: "Diplomata SC", cursive;
-  text-align: center;
-  justify-content: center;
-  font-size: 0.5em;
 }
-nav > a {
-  font-size: 2rem;
+
+.header-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-copy > a {
+  text-decoration: none;
+  color: #9C1A26;
+  font-weight: 800;
 }
 
 #menu {
@@ -58,7 +60,6 @@ nav > a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  position: fixed;
   right: 0;
   top: 5vh;
   /* prevents double clicking from selecting stuff */
@@ -78,18 +79,6 @@ nav > a {
   background: #000;
   margin: 8px;
   margin-right: 20px;
-}
-
-h2 {
-  align-self: center;
-  justify-self: center;
-  font-size: 1rem;
-}
-
-h3 {
-  display: block;
-  align-self: center;
-  margin-top: 50%;
 }
 
 #dropdown {
@@ -377,7 +366,7 @@ footer > p {
   font-size: 0.8rem;
 }
 
-@media only screen and (min-width: 6768px) {
+@media only screen and (min-width: 768px) {
   nav {
     border: 2px solid black;
     z-index: 40;
