@@ -5,7 +5,7 @@
 
 html {
   background-color: #FEE071;
-  font-family: "nothing you could do about it";
+  font-family: "Roboto", sans-serif;
 }
 
 #logo {
@@ -15,7 +15,7 @@ html {
 }
 
 .font-small {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 900;
 }
 
@@ -119,7 +119,7 @@ h3 {
 #dropdown > li > a {
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "diplomata sc";
 }
 
@@ -243,7 +243,7 @@ h3 {
   color: #000;
 }
 #hoursandlocation > p {
-  font-style: 1rem;
+  font-style: 0.8rem;
   font-weight: 800;
   padding: 0.5em;
 }
@@ -267,6 +267,96 @@ h3 {
 }
 .icons li {
   display: inline-block;
+}
+
+.foodmenu {
+  position: relative;
+  z-index: 40;
+  text-align: center;
+  padding: 10px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  top: 20vh;
+}
+.foodmenu > h4 {
+  color: #fff;
+}
+
+.drink {
+  background-color: black;
+  border: #fff 2px solid;
+  color: #fff;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 9%;
+  margin-top: 50px;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  top: 3vh;
+}
+.drink:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.food {
+  background-color: black;
+  border: #fff 2px solid;
+  color: #fff;
+  padding: 8px 16px;
+  position: relative;
+  left: -7%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  margin-top: 10px;
+  top: 3vh;
+}
+.food:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+article {
+  top: 20vh;
+  position: relative;
+  text-align: center;
+  left: 5%;
+  background-color: rgb(43, 45, 47);
+  box-sizing: border-box;
+  padding-top: 0.1vh;
+  padding: 0.1vh 5vw;
+  width: 90vw;
+  color: #fff;
+}
+article hr {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.menuhead {
+  border-bottom: #fff 2px solid;
+  text-align: right;
+  display: grid;
+  color: #fff;
+  margin: 2rem;
+}
+.menuhead > h2 {
+  text-align: left;
+  color: #fff;
+}
+.menuhead > p {
+  font-style: italic;
+}
+.menuhead > p {
+  border-top: #fff;
 }
 
 footer {

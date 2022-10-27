@@ -5,7 +5,7 @@
 
 html {
   background-color: #FEE071;
-  font-family: "nothing you could do about it";
+  font-family: "Roboto", sans-serif;
 }
 
 #logo {
@@ -126,6 +126,10 @@ p {
   pointer-events: all;
 }
 
+.mainpage {
+  display: grid;
+}
+
 .foodmenu {
   position: relative;
   z-index: 40;
@@ -185,6 +189,7 @@ article {
   position: relative;
   text-align: center;
   left: 5%;
+  right: 10%;
   background-color: rgb(43, 45, 47);
   box-sizing: border-box;
   padding-top: 0.1vh;
