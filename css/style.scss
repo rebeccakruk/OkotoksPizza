@@ -26,13 +26,13 @@ $title_style: 1.5rem;
 nav {
     position: sticky;
     border: 2px solid black;
+    top: 0;
     display: flex;
     width: 100%;
     box-sizing: border-box;
     background-color: #fff;
     color: #000;
-    font-family: 'Diplomata SC', cursive;
-    
+    font-family: 'Diplomata SC', cursive; 
 }
 
 .header-copy {
@@ -48,17 +48,7 @@ nav {
 }
 #menu {
     user-select: none;
-    // position: sticky;
-    // bottom: 50px;
-    // right: 0;
-    // top: 5vh;
-    /* prevents double clicking from selecting stuff */
-    /* in the real website, you don't want the rest to be pushed down, you want it to be overlay. How do we do that? What's the secret here? */
-    /* display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #0e2431; */
+
 }
 .line {
     display: block;

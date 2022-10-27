@@ -6,6 +6,7 @@
 html {
   background-color: #FEE071;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 #logo {
@@ -35,6 +36,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   border: 2px solid black;
+  top: 0;
   display: flex;
   width: 100%;
   box-sizing: border-box;
@@ -60,13 +62,6 @@ nav {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  /* prevents double clicking from selecting stuff */
-  /* in the real website, you don't want the rest to be pushed down, you want it to be overlay. How do we do that? What's the secret here? */
-  /* display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: #0e2431; */
 }
 
 .line {
