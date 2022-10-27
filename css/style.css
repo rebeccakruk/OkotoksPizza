@@ -60,8 +60,6 @@ nav {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  right: 0;
-  top: 5vh;
   /* prevents double clicking from selecting stuff */
   /* in the real website, you don't want the rest to be pushed down, you want it to be overlay. How do we do that? What's the secret here? */
   /* display: block;
@@ -85,7 +83,6 @@ nav {
   background-color: #FEE071;
   display: none;
   white-space: 15px;
-  left: 100px;
   width: 150vw;
   height: 60vh;
 }

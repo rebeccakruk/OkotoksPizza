@@ -50,8 +50,8 @@ nav {
     user-select: none;
     // position: sticky;
     // bottom: 50px;
-    right: 0;
-    top: 5vh;
+    // right: 0;
+    // top: 5vh;
     /* prevents double clicking from selecting stuff */
     /* in the real website, you don't want the rest to be pushed down, you want it to be overlay. How do we do that? What's the secret here? */
     /* display: block;
@@ -75,12 +75,11 @@ nav {
     display: none;
     // position: absolute;
     white-space: 15px;
-    left: 100px;
+    // left: 100px;
     // position: relative;
     width: 150vw;
     height: 60vh;
     > li{
-        // text-decoration: none;
         display: block;
         padding: 30px;
         white-space: 20px;
