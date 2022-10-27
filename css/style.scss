@@ -422,7 +422,12 @@ nav {
     color: #fff;
 
 }
-
+#map {
+    overflow: hidden;
+}
+iframe {
+    overflow: hidden;
+}
 .button {
     background-color: #000;
     border: #fff 2px solid;
