@@ -22,7 +22,9 @@ $title_style: 1.5rem;
     color: #fff;
     font-family: 'Nothing You Could Do', cursive;
 }
-
+a .home img#logo {
+    width: 75px;
+}
 nav {
     position: sticky;
     border: 2px solid black;
