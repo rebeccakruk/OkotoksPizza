@@ -219,16 +219,8 @@ nav {
 }
 
 .foodmenu {
-    // border: 1px solid black;
-    position: relative;
-    // z-index: 40;
     text-align: center;
     padding: 10px;
-    // background-color: #FEE071;
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-    top: 20vh;
-
     >h4 {
         color: #fff;
     }
@@ -285,10 +277,10 @@ nav {
 }
 
 article {
-    top: 20vh;
-    position: relative;
+    // top: 20vh;
+    // position: relative;
     text-align: center;
-    left: 5%;
+    // left: 5%;
     background-color: rgb(43, 45, 47);
     box-sizing: border-box;
     padding-top: 0.1vh;
