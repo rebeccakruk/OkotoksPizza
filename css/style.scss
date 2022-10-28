@@ -381,6 +381,46 @@ article {
         }
         // add hover effect after media query
 
+#aboutus {
+    background-color: rgb(43, 45, 47);
+    color: #fff;
+    line-height: 1.8;
+    padding: 5%;
+
+    >p {
+        margin-top: 2%;
+    }
+}
+
+.gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-rows: min-content;
+        gap: 2rem;
+        background-color: #000;
+            > section {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-auto-rows: 250px 50px;
+                    > img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                        > div {
+                            position: relative;
+                            color: black;
+                            padding: 0.5em;
+                        }
+                }
+        }        
+
+// .gallery {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     width: 250px;
+// }
+
+
 
 footer {
         border: 2px solid black;
@@ -412,18 +452,10 @@ footer {
             }
                     >p {
                         font-size: 0.8rem;
+                        font-weight: 900;
                     }
 }
 
-#aboutus {
-        background-color: rgb(43, 45, 47);
-        color: #fff;
-        line-height: 1.8;
-        padding: 5%;
-            >p {
-                margin-top: 2%;
-            }
-        }
 
 @media only screen and (min-width:768px) {
     #logo {
