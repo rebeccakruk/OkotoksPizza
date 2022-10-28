@@ -36,7 +36,10 @@ nav {
   border: 2px solid black;
   padding: 20px;
   top: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
   width: 100%;
   z-index: 100;
   box-sizing: border-box;
@@ -44,13 +47,10 @@ nav {
   color: #000;
   font-family: "Diplomata SC", cursive;
 }
-nav > li {
-  z-index: 100;
-}
 
 .header-copy {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
 }
@@ -79,6 +79,8 @@ nav > li {
 
 #pcview {
   display: none;
+  font-style: "Nothing you could do", cursive;
+  color: limegreen;
 }
 
 #dropdown {
@@ -87,7 +89,7 @@ nav > li {
   white-space: 15px;
   width: 150vw;
   height: 60vh;
-  z-index: 99;
+  z-index: 10;
 }
 #dropdown > li {
   display: block;
@@ -194,9 +196,11 @@ nav > li {
   background-color: #000;
   border: #fff 2px solid;
   color: #fff;
-  padding: 10px 20px;
+  padding: 8px 16px;
   position: absolute;
-  display: flex;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -10%);
   text-decoration: none;
   border-radius: 3px;
   text-transform: uppercase;
@@ -224,17 +228,29 @@ nav > li {
   padding: 0.5em;
 }
 
-.social {
-  width: 400px;
-  text-align: center;
-}
-
 .icons {
   list-style: none;
   margin: 0.8em;
 }
 .icons li {
   display: inline-block;
+  position: relative;
+  right: 10%;
+}
+
+.contact {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  font-size: 0.8rem;
+  background-color: #000;
+  border: #fff 2px solid;
+  color: #fff;
+  padding: 8px 16px;
+}
+.contact:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 .foodmenu {
@@ -307,10 +323,19 @@ nav > li {
   background-color: #fff;
 }
 
-article .longmenu {
+.videoandmessage {
+  background-color: #000;
+}
+
+article > .longmenu {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
+}
+article > h1 {
+  background-color: #000;
+  text-align: center;
 }
 
 .menu-section {
@@ -341,7 +366,6 @@ article .longmenu {
   text-align: left;
   color: #fff;
   font-size: 2rem;
-  font-family: "nothing you could do", cursive;
 }
 
 .menuitems {
@@ -372,7 +396,8 @@ footer {
 footer .icons {
   color: #000;
   text-transform: uppercase;
-  display: inline-flexbox;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-right: 0.5em;
 }
 footer .icons a {
@@ -386,6 +411,16 @@ footer > p {
   font-size: 0.8rem;
 }
 
+#aboutus {
+  background-color: rgb(43, 45, 47);
+  color: #fff;
+  line-height: 1.8;
+  padding: 5%;
+}
+#aboutus > p {
+  margin-top: 2%;
+}
+
 @media only screen and (min-width: 768px) {
   #logo {
     width: 100px;
@@ -393,15 +428,6 @@ footer > p {
   nav {
     font-size: 1.5rem;
   }
-  nav > li {
-    z-index: 100;
-  }
-  #menu {
-    display: none;
-  }
-  #pcview {
-    display: initial;
-  }
   .header-copy {
     display: grid;
     grid-template-columns: 1fr;
@@ -411,78 +437,49 @@ footer > p {
   .header-copy > a {
     color: #9C1A26;
     font-weight: 800;
+    font-style: "nothing you could do", cursive;
+    pointer-events: none;
   }
   #dropdown {
     display: none;
   }
-}
-#about {
-  padding: 10px;
-  height: 200px;
-  background-color: #000;
-  color: #fff;
-}
-
-.button {
-  background-color: #000;
-  border: #fff 2px solid;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 110%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-  border-radius: 3px;
-}
-.button:hover {
-  color: #000;
-  background-color: #fff;
-}
-
-#hoursandlocation {
-  text-align: center;
-  padding: 10px;
-  background-color: #fff;
-  color: #000;
-}
-#hoursandlocation > p {
-  font-style: 0.8rem;
-  font-weight: 800;
-  padding: 0.5em;
-}
-#hoursandlocation > a {
-  display: block;
-  text-decoration: none;
-  color: #000;
-  padding: 0.5em;
-}
-
-@media only screen and (min-width: 1000px) {
-  #logo {
-    width: 100px;
+  #about {
+    padding: 10px;
+    height: 200px;
+    background-color: #000;
+    color: #fff;
   }
-  nav {
-    font-size: 1.5rem;
-  }
-  nav > li {
-    z-index: 100;
-  }
-  #menu {
-    display: none;
-  }
-  #pcview {
-    display: initial;
-  }
-  .header-copy {
-    display: grid;
-    grid-template-columns: 1fr;
+  .button {
+    background-color: #000;
+    border: #fff 2px solid;
+    color: #fff;
+    display: flex;
     justify-content: center;
     align-items: center;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    border-radius: 3px;
   }
-  .header-copy > a {
-    pointer-events: none;
-    color: #9C1A26;
+  .button:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  #hoursandlocation {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+  }
+  #hoursandlocation > p {
+    font-style: 0.8rem;
     font-weight: 800;
+    padding: 0.5em;
+  }
+  #hoursandlocation > a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 0.5em;
   }
 }/*# sourceMappingURL=style.css.map */

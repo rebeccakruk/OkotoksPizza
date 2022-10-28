@@ -30,21 +30,24 @@ nav {
     border: 2px solid black;
     padding: 20px;
     top: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
     width: 100%;
     z-index: 100;
     box-sizing: border-box;
     background-color: #fff;
     color: #000;
     font-family: 'Diplomata SC', cursive; 
-    >li {
-        z-index: 100;
-    }
+    // >li {
+    //     // z-index: 100;
+    // }
 }
 
 .header-copy {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     >a {
@@ -67,6 +70,8 @@ nav {
 }
 #pcview{
     display: none;
+    font-style: 'Nothing you could do', cursive;
+    color: limegreen;
 }
 
 #dropdown {
@@ -78,7 +83,7 @@ nav {
     // position: relative;
     width: 150vw;
     height: 60vh;
-    z-index: 99;
+    z-index: 10;
     > li{
         display: block;
         padding: 30px;
@@ -169,13 +174,13 @@ nav {
     background-color: #000;
     border: #fff 2px solid;
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 16px;
     position: absolute;
-    display: flex;
-    // top: 80%;
-    // left: 50%;
-    // -ms-transform: translate(-80%, -80%);
-    // transform: translate(-50%, -50%);
+    
+    top: 110%;
+    left: 50%;
+    -ms-transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%);
     text-decoration: none;
     border-radius: 3px;
     // transition: all .5s ease;
@@ -204,18 +209,30 @@ nav {
     }
 }
 
-.social {
-    width: 400px;
-    text-align: center;
-    // margin: 30vh auto;
-}
-
 .icons {
     list-style: none;
     margin: 0.8em;
     li{
         display: inline-block;
+        position: relative;
+        right: 10%;
     }
+}
+
+.contact {
+    text-decoration: none;
+    position: relative;
+    // right: 3%;
+    color: #000;
+    font-size: $font_small;
+    background-color: #000;
+        border: #fff 2px solid;
+        color: #fff;
+        padding: 8px 16px;
+        &:hover {
+            color: #000;
+                background-color: #fff;
+        }
 }
 
 .foodmenu {
@@ -280,11 +297,8 @@ nav {
     border: #fff 2px solid;
     color: #fff;
     padding: 8px 16px;
-    // margin-bottom: 10px;
     position: relative;
     left: 50%;
-    // top: 50%;
-    // margin-top: 50px;
     transform: translateX(-50%);
     text-decoration: none;
     border-radius: 3px;
@@ -298,11 +312,23 @@ nav {
     }
 }
 
-article .longmenu {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.videoandmessage {
+    background-color: #000;
 }
+
+article {
+    >.longmenu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+            }
+            > h1 {
+                background-color: #000;
+                text-align: center;
+            }
+}
+
 .menu-section {
     display: flex;
     flex-direction: column;
@@ -333,7 +359,6 @@ article .longmenu {
                         text-align: left;
                         color: #fff;
                         font-size: $font_large;
-                        font-family: 'nothing you could do', cursive;
                         }
                     
             }
@@ -374,7 +399,8 @@ footer {
             .icons {
                 color: #000;
                 text-transform: uppercase;
-                display: inline-flexbox;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
                 margin-right:0.5em;
                     a   {
                     text-decoration: none;
@@ -389,43 +415,41 @@ footer {
                     }
 }
 
+#aboutus {
+        background-color: rgb(43, 45, 47);
+        color: #fff;
+        line-height: 1.8;
+        padding: 5%;
+            >p {
+                margin-top: 2%;
+            }
+        }
+
 @media only screen and (min-width:768px) {
     #logo {
             width: 100px;
     }
     nav {
         font-size: 1.5rem;
-        >li {
-            z-index: 100;
-        }
+        // >li {
+        //     // z-index: 100;
+        // }
     }
-        #menu {
-            display: none;
-        }
-
-        #pcview {
-            display: initial;
-        }
         .header-copy {
             display: grid;
             grid-template-columns: 1fr;
             justify-content: center;
             align-items: center;
-    
-            >a {
+            > a {
                 color: #9C1A26;
                 font-weight: 800;
+                font-style: 'nothing you could do', cursive;
+                pointer-events: none;
         }
     }
         #dropdown {
             display: none;
-            // background-color: limegreen;
-            // font-weight: 900;
-            //     >li a {
-            //         display: all;
-            //         color:rebeccapurple;
-            //     }
-    }
+    
 }
 
 #about {
@@ -479,7 +503,7 @@ footer {
         padding: 0.5em;
     }
 }
-
+}
 
 // .icons {
 //     width: 100%;
@@ -490,45 +514,45 @@ footer {
 //     text-decoration: none;
 // 
 
-@media only screen and (min-width:1000px) {
-        #logo {
-            width: 100px;
-        }
+// @media only screen and (min-width:1000px) {
+//         #logo {
+//             width: 100px;
+//         }
 
-        nav {
-            font-size: 1.5rem;
+//         nav {
+//             font-size: 1.5rem;
 
-            >li {
-                z-index: 100;
-            }
-        }
+//             >li {
+//                 z-index: 100;
+//             }
+//         }
 
-        #menu {
-            display: none;
-        }
+//         #menu {
+//             display: none;
+//         }
 
-        // #menu:focus-within {
-        //                 pointer-events: none;
-        // }
-        // #menu:focus-within #dropdown {
-        // /* when fw is active, the child of it */
-        //         display: block;
-        //         pointer-events: all;
-        // }
-        #pcview {
-            display: initial;
-        }
+//         // #menu:focus-within {
+//         //                 pointer-events: none;
+//         // }
+//         // #menu:focus-within #dropdown {
+//         // /* when fw is active, the child of it */
+//         //         display: block;
+//         //         pointer-events: all;
+//         // }
+//         #pcview {
+//             display: initial;
+//         }
 
-        .header-copy {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    justify-content: center;
-                    align-items: center;
+//         .header-copy {
+//                     display: grid;
+//                     grid-template-columns: 1fr;
+//                     justify-content: center;
+//                     align-items: center;
 
-                        >a {
-                            pointer-events: none;
-                            color: #9C1A26;
-                            font-weight: 800;
-                        }   
-                    }   
-                }
+//                         >a {
+//                             pointer-events: none;
+//                             color: #9C1A26;
+//                             font-weight: 800;
+//                         }   
+//                     }   
+//                 }

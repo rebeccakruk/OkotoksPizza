@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Gallery</title>
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <header>
-            <nav>
-                <a class="home" href="index.html"><img id="logo" src="/media/logo1.png" alt="logo"></a>
-                <div class="header-copy"><h4>Okotoks Pizza</h4>
-            <a href="tel:403-555-6767">403-555-6767</a>
+
+<body>
+    <header>
+        <nav>
+            <a class="home" href="index.html"><img id="logo" src="/media/logo1.png" alt="logo"></a>
+            <div class="header-copy">
+                <h4>Okotoks Pizza</h4>
+                <a href="tel:403-555-6767">403-555-6767</a>
             </div>
             <div tabindex="0" id="menu">
                 <!-- label with tab index, then when we do fw, it will display. if it was a link and it was clicked, the menu would collapse, which is a problem. Solved using pointer events. When you're clicking within the menu you want the pointer events disable, but then when you're clikcing on the dropdown you want to enable the pointer events again. Now you're free to click within the menu, nothing happens, it will still close. -->
@@ -40,26 +47,34 @@
                 </div>
             </div>
         </nav>
-        </header>
-        <div id="articles">
-            <img src="/media/Pizzaoven.avif" alt="pizza in front of pizza oven" />
-            <div>
-                <p>Our Pizza Oven</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem esse quos et reiciendis nesciunt incidunt itaque deserunt pariatur laborum sed?</p>
-            </div>
-            <img src="/media/sauceondough.avif" alt="pizza sauce on fresh dough" />
-            <img src="/media/mushroom.avif" alt="mushrooms on pizza" />
-            <img src="media/pizzarosemary.avif" alt="sliced pizza" />
-            <img src="media/peopleeatingpizza.avif" alt="people eating a pizza" />
+    </header>
+    <div id="articles">
+        <img src="/media/pizzainfrontofoven.jpeg" alt="pizza in front of pizza oven" />
+        <div>
+            <p>Our Pizza Oven</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem esse quos et reiciendis nesciunt
+                incidunt itaque deserunt pariatur laborum sed?</p>
         </div>
-         <footer>
-            <p>2022 All Rights Reserved</p>
-            <li class="social">
-                <ul class="icons"></ul>
-                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-            </div>
-        </footer>
-    </body>
+        <img src="/media/lights.jpeg" alt="lights" />
+        <img src="/media/busyrestaurant.jpeg" alt="busy restaurant" />
+        <img src="media/pasta.avif" alt="pasta" />
+        <img src="media/peopleeatingpizza.avif" alt="people eating a pizza" />
+    </div>
+    <footer>
+        <p>FOLLOW US ON SOCIAL</p>
+        <ul class="icons">
+
+            <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+
+        </ul>
+
+        <a class="contact" href="emailto:okotokspizza@gmail.com">Email us</a>
+
+        </div>
+        <p>OKOTOKS PIZZA 2022 - All Rights Reserved</p>
+    </footer>
+</body>
+
 </html>
