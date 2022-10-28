@@ -4,7 +4,7 @@
 }
 
 html {
-  background-color: #FEE071;
+  background-color: #9C1A26;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
@@ -411,6 +411,9 @@ article > h1 {
 .gallery > section > img {
   max-width: 100%;
   max-height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .gallery > section > div {
   position: relative;

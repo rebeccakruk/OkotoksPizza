@@ -1,95 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Okotoks Pizza</title>
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okotoks Pizza</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nothing+You+Could+Do&family=Open+Sans&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-    <body>
-            <nav>
-                <a class="home" href="index.html"><img id="logo" src="/media/logo1.png" alt="logo"></a>
-                <div class="header-copy"><h4>Okotoks Pizza</h4>
+
+<body>
+    <nav>
+        <a class="home" href="index.html"><img id="logo" src="/media/logo1.png" alt="logo"></a>
+        <div class="header-copy">
+            <h4>Okotoks Pizza</h4>
             <a class="phone" href="tel:403-555-6767">403-555-6767</a>
-            </div>
-            <div tabindex="0" id="menu">
-                <!-- label with tab index, then when we do fw, it will display. if it was a link and it was clicked, the menu would collapse, which is a problem. Solved using pointer events. When you're clicking within the menu you want the pointer events disable, but then when you're clikcing on the dropdown you want to enable the pointer events again. Now you're free to click within the menu, nothing happens, it will still close. -->
-                <label>
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </label>
-                <div id="dropdown">
-                    <!-- we want this hidden until someone clicks on this menu -->
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="index.html">Homely</a></li>
-                </div>
-            </div>
-        <div id="pcview">
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">About</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="index.html">Home</a>
-                </div>
-        </nav>
-        <div class="slideshow">
-            <img class="slide1" src="/media/mushroom.avif" alt="mushroom pizza topping">
-            <img class="slide2" src="/media/pasta.avif" alt="pasta">
-            <img class="slide3" src="/media/pizzarosemary.avif" alt="delicious pizza">
-            <img class="slide4" src="/media/Pizzaoven.avif" alt="pizza oven">
         </div>
-        <main>
+        <div tabindex="0" id="menu">
+            <!-- label with tab index, then when we do fw, it will display. if it was a link and it was clicked, the menu would collapse, which is a problem. Solved using pointer events. When you're clicking within the menu you want the pointer events disable, but then when you're clikcing on the dropdown you want to enable the pointer events again. Now you're free to click within the menu, nothing happens, it will still close. -->
+            <label>
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </label>
+            <div id="dropdown">
+                <!-- we want this hidden until someone clicks on this menu -->
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html">Homely</a></li>
+            </div>
+        </div>
+        <div id="pcview">
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+    <div class="slideshow">
+        <img class="slide1" src="/media/mushroom.avif" alt="mushroom pizza topping">
+        <img class="slide2" src="/media/pasta.avif" alt="pasta">
+        <img class="slide3" src="/media/pizzarosemary.avif" alt="delicious pizza">
+        <img class="slide4" src="/media/Pizzaoven.avif" alt="pizza oven">
+    </div>
+    <main>
         <section id="about">
             <h4 class="titlestyleb">About</h4>
-            <p>There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep coming back, again, again, and again.</p>
+            <p>There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’
+                flavour, experience and consistency you not only want, but deserve. Our customers keep coming back,
+                again, again, and again.</p>
             <a class="button" href="about.html">Learn More</a>
-            </section>
-            <!-- <div class="logo">
+        </section>
+        <!-- <div class="logo">
                 <a href="index.html"><img id="logo" src="/media/logo1.png" alt="logo"></a>
             </div> -->
-            <section id="hoursandlocation">
-                <h4 class="titlestyle">Hours and Location</h4>
-                <p>57 Riverside Gate, Okotoks, AB T1S 1B3</p>
-                <a href="tel:403-555-6767">403-555-6767</a>
-                <a href="mailto:okotokspizza@gmail.com">okotokspizza@gmail.com</a>
-                <h4 class="font-large">Monday through Thursday:</h4>
-                <p>4:00 - midnight</p>
-                <h4 class="font-large">Friday and Saturday:</h3>
+        <section id="hoursandlocation">
+            <h4 class="titlestyle">Hours and Location</h4>
+            <p>57 Riverside Gate, Okotoks, AB T1S 1B3</p>
+            <a href="tel:403-555-6767">403-555-6767</a>
+            <a href="mailto:okotokspizza@gmail.com">okotokspizza@gmail.com</a>
+            <h4 class="font-large">Monday through Thursday:</h4>
+            <p>4:00 - midnight</p>
+            <h4 class="font-large">Friday and Saturday:</h3>
                 <p>3:00 - 2:00 am</p>
                 <h4 class="font-large">Sunday:</h4>
                 <p>3:00 - 10:00 pm</p>
                 <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.7946472915255!2d-113.9808814!3d50.723748799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53719833e0cb5bdb%3A0xe0b458ffc25d1f1a!2sDenny&#39;s!5e0!3m2!1sen!2sca!4v1666476609299!5m2!1sen!2sca" name="maplink" width="100%" height="300" style="border: 0" allowfullscnamereen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.7946472915255!2d-113.9808814!3d50.723748799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53719833e0cb5bdb%3A0xe0b458ffc25d1f1a!2sDenny&#39;s!5e0!3m2!1sen!2sca!4v1666476609299!5m2!1sen!2sca"
+                        name="maplink" width="100%" height="300" style="border: 0" allowfullscnamereen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                </section>
-        </main>
-        <footer>
-            <p>FOLLOW US ON SOCIAL</p>
-            <ul class="icons">
-          
-                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-           
-            </ul>
-           
-                <a class="contact" href="emailto:okotokspizza@gmail.com">Email us</a>
-          
-            </div>
-                <p>OKOTOKS PIZZA 2022 - All Rights Reserved</p>
-        </footer>
-    </body>
+        </section>
+    </main>
+    <footer>
+        <p>FOLLOW US ON SOCIAL</p>
+        <ul class="icons">
+            <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+        </ul>
+        <a class="contact" href="emailto:okotokspizza@gmail.com">Email us</a>
+        </div>
+        <p>OKOTOKS PIZZA 2022 - All Rights Reserved</p>
+    </footer>
+</body>
+
 </html>
