@@ -288,6 +288,25 @@ nav > li {
   background-color: #fff;
 }
 
+.top {
+  background-color: black;
+  border: #fff 2px solid;
+  color: #fff;
+  padding: 8px 16px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  top: 3vh;
+}
+.top:hover {
+  color: #000;
+  background-color: #fff;
+}
+
 article .longmenu {
   width: 100%;
   display: flex;
