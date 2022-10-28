@@ -275,7 +275,34 @@ nav {
         background-color: #fff;
     }
 }
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+        >div {
+            width: 100%;
+            border-bottom: 1px solid #fff;
+            padding: 20px 0;
 
+            .menuhead {
+            border-bottom: #fff 2px solid;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            align-items: center;
+            }
+                h2 {
+                    text-align: left;
+                    color: #fff;
+                    font-size: $font_large;
+                    font-family: 'nothing you could do', cursive;
+                    }
+                    h3 {
+                        font-size: $font_small;
+                        font-weight: 900;
+                        }
+            }
+        }
 .menuitems {
     text-align: left;
     background-color: rgb(43, 45, 47);
