@@ -240,6 +240,8 @@ nav > li {
 .foodmenu {
   text-align: center;
   padding: 10px;
+  position: relative;
+  z-index: 5;
 }
 .foodmenu > h4 {
   color: #fff;
@@ -286,6 +288,12 @@ nav > li {
   background-color: #fff;
 }
 
+article .longmenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .menu-section {
   display: flex;
   flex-direction: column;
@@ -298,6 +306,7 @@ nav > li {
 }
 .menu-section div h3 {
   font-size: 0.8rem;
+  color: rebeccapurpleclas;
   font-weight: 900;
   font-style: italic;
 }
@@ -320,6 +329,9 @@ nav > li {
   text-align: left;
   background-color: rgb(43, 45, 47);
   box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0.1vh 5vw;
   width: 90vw;
   color: #fff;

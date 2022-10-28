@@ -221,6 +221,8 @@ nav {
 .foodmenu {
     text-align: center;
     padding: 10px;
+    position: relative;
+    z-index: 5;
     >h4 {
         color: #fff;
     }
@@ -275,6 +277,12 @@ nav {
         background-color: #fff;
     }
 }
+
+article .longmenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .menu-section {
     display: flex;
     flex-direction: column;
@@ -286,6 +294,7 @@ nav {
 
             h3 {
                 font-size: $font_small;
+                color: rebeccapurpleclas;
                 font-weight: 900;
                 font-style: italic;
                 
@@ -313,6 +322,9 @@ nav {
     text-align: left;
     background-color: rgb(43, 45, 47);
     box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 0.1vh 5vw;
     width: 90vw;
     color: #fff;
