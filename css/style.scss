@@ -175,10 +175,9 @@ nav {
     border: #fff 2px solid;
     color: #fff;
     padding: 8px 16px;
-    position: absolute;
-    
-    top: 110%;
-    left: 50%;
+    position: relative;
+    top: 10%;
+    left: 60%;
     -ms-transform: translate(-50%, -10%);
     transform: translate(-50%, -10%);
     text-decoration: none;
@@ -209,6 +208,29 @@ nav {
     }
 }
 
+#tabmap {
+        display: none;
+            > a {
+                text-decoration: none;
+                background-color: #FEE071;
+                border: #000 2px solid;
+                color: #000;
+                padding: 6px 12px;
+                position: relative;
+                border-radius: 3px;
+                // top: 10%;
+                left: 50%;
+                -ms-transform: translate(-50%, -10%);
+                transform: translate(-50%, -10%);
+                // transition: all .5s ease;
+                text-transform: uppercase;
+        
+                    &:hover {
+                        color: #fff;
+                        background-color: #000;
+                    }
+}
+}
 .icons {
     list-style: none;
     margin: 0.8em;
@@ -427,42 +449,40 @@ article {
 
 footer {
         border: 2px solid black;
-        display: grid;
-        // margin: 0.4rem;
-        // padding-bottom: 0.2rem;
-        // padding-top: 0.2rem;
-        // padding-left: 1rem;
-        // padding-right: 1rem;
+        
         background-color: #fff;
         color: #000;
-        // text-align: center;
-        // justify-content: center;
-        font-size: 0.5em;
+        font-size: 2rem;
         text-align: center;
             .icons {
                 color: #000;
+                font-size: icon2x;
                 text-transform: uppercase;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                margin-right:0.5em;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                // margin-right:0.5em;
+                // padding: 10%;
                     a   {
                     text-decoration: none;
                     color: #000;
                     font-size: 1rem;
-                    justify-content: space-between 5px;
                     padding: 0;
                     }
             }
                     >p {
                         font-size: 0.8rem;
                         font-weight: 900;
+                        margin-top: 1em;
                     }
 }
 
-
+// this is for tablet 
 @media only screen and (min-width:768px) {
     #logo {
-            width: 100px;
+            height: 20vh;
     }
     nav {
         font-size: 1.5rem;
@@ -489,56 +509,61 @@ footer {
 
 #about {
     // height: $section_height;
-    padding: 10px;
-    height: 200px;
-    background-color: #000;
-    color: #fff;
+    padding: 40px;
+    height: 150px;
+    // background-color: #000;
+    // color: #fff;
+    line-height: 1.8;
 }
 
 .button {
-    background-color:#000;
-    border: #fff 2px solid;
-    color: #fff;
-    // padding: 10px 20px;
-    display: flex;
-    // position: relative;
-    justify-content: center;
-    align-items: center;
-    top: 110%;
-    left: 50%;
-    -ms-transform: translate(-80%, -10%);
-    transform: translate(-50%, -10%);
-    // text-decoration: none;
-    border-radius: 3px;
-    // transition: all .5s ease;
-    // text-transform: uppercase;
-
-    &:hover {
-        color: #000;
-        background-color: #fff;
-    }
+        position: relative;
+        left: 42%;
 }
 
 #hoursandlocation {
-    text-align: center;
-    padding: 10px;
-    background-color: #fff;
-    color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+        >h3 {
+            font-size: 2rem;
+        }
+        >h4 {
+            font-size: 1.5rem;
+        }
+        #address {
+            font-size: 0.8em;
+        }
+    // text-align: center;
+    // padding: 10px;
+    // background-color: #fff;
+    // color: #000;
 
-    >p {
-        font-style: $font_small;
-        font-weight: 800;
-        padding: 0.5em;
-    }
+    // >p {
+    //     font-size: $font_large;
+    //     font-weight: 800;
+    //     padding: 0.5em;
+    // }
 
     >a {
         display: block;
         text-decoration: none;
         color: #000;
+        font-weight: 900;
         padding: 0.5em;
     }
 }
+#tabmap {
+    display: initial;
 }
+#map {
+    display: none;
+    }
+}
+
+
+
+
 
 // .icons {
 //     width: 100%;
