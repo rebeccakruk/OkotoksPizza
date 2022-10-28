@@ -291,27 +291,29 @@ nav > li {
   flex-direction: column;
   padding: 50px 0;
 }
-.menu-section > div {
+.menu-section div {
   width: 100%;
   border-bottom: 1px solid #fff;
   padding: 20px 0;
 }
-.menu-section > div .menuhead {
+.menu-section div h3 {
+  font-size: 0.8rem;
+  font-weight: 900;
+  font-style: italic;
+}
+.menu-section .menuhead {
   border-bottom: #fff 2px solid;
   display: flex;
   justify-content: space-between;
   color: #fff;
+  font-style: italic;
   align-items: center;
 }
-.menu-section > div h2 {
+.menu-section h2 {
   text-align: left;
   color: #fff;
   font-size: 2rem;
   font-family: "nothing you could do", cursive;
-}
-.menu-section > div h3 {
-  font-size: 0.8rem;
-  font-weight: 900;
 }
 
 .menuitems {
@@ -326,22 +328,6 @@ nav > li {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 12px;
-}
-.menuitems .menuhead {
-  border-bottom: #fff 2px solid;
-  text-align: right;
-  display: grid;
-  color: #fff;
-  padding: 1em 1em;
-  margin: 2rem;
-}
-.menuitems .menuhead > h2 {
-  text-align: left;
-  color: #fff;
-}
-.menuitems .menuhead > p {
-  font-style: italic;
-  border-top: #fff;
 }
 
 footer {
