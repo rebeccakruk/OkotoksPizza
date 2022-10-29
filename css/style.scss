@@ -23,9 +23,6 @@ $title_style: 1.5rem;
     font-family: 'Nothing You Could Do', cursive;
 }
 
-// a .home img#logo {
-//     width: 75px;
-// }
 nav {
     position: sticky;
     border: 2px solid black;
@@ -55,6 +52,7 @@ nav {
         }
     }
 
+    // this is the hamburger menu
     #menu {
         user-select: none;
     }
@@ -69,12 +67,14 @@ nav {
         margin-right: 20px;
     }
 
+    // this is the navbar when it's on a pc it's hidden on mobile and tablet
     #pcview {
         display: none;
         font-style: 'Nothing you could do', cursive;
         color: limegreen;
     }
 
+    // this is behind the hamburger menu. it disappears when the screen size reaches pc (1000)
     #dropdown {
         background-color: #FEE071;
         display: none;
@@ -115,17 +115,17 @@ nav {
     }
 
     #menu:focus-within #dropdown {
-        /* when fw is active, the child of it */
+        /* when fw is active, the child of it will display*/
         display: block;
         pointer-events: all;
     }
 }
 
-
+// this is a crossfade animation. Each picture (there are four) appears for 2 seconds at alternating times.
 .slideshow {
     position: relative;
     height: 350px;
-    // overflow: hidden;
+    overflow: hidden;
 
     img {
         position: absolute;
@@ -163,6 +163,8 @@ nav {
     }
 }
 
+// this is the actual animation function of the crossfade where the opacity creates the effect of 'fading' in and out
+
 @keyframes frontpagegallery {
     0% {
         opacity: 1;
@@ -184,7 +186,7 @@ nav {
         opacity: 1;
     }
 }
-
+// ***************************** SUNDAY 16:59. SHUTTING IT DOWN. ABOUT TO STYLE 'SEND YOUR RESUME' BUTTON TO THE SAME AS 'LEARN MORE' BUTTON ******
 #about {
     padding: 10px;
     height: 200px;
@@ -233,10 +235,12 @@ nav {
     }
 }
 
+// this div is hidden until the media query for tablet is reached. it will remove the iframe and just leave a button for map
 .tabmap {
     display: none;
 }
 
+// the z-index here is so that the two buttons (food and drink) are on top of the menu.
 .foodmenu {
     text-align: center;
     padding: 10px;
@@ -247,7 +251,7 @@ nav {
         color: #fff;
     }
 }
-
+// the following two classes are links to specific areas of the page
 .drink {
     background-color: black;
     border: #fff 2px solid;
@@ -293,6 +297,8 @@ nav {
     }
 }
 
+
+// this is a link (appearing to be a button) that scrolls a user back to the top of a long page
 .top {
     background-color: black;
     border: #fff 2px solid;
@@ -319,6 +325,7 @@ nav {
     padding: 1em;
 }
 
+// this is the css for responsive video. the 9/16 ratio of height to width for youtube videos. (9/16 = 0.5625 x 100%). The iframe will adjust to the screensize without losing it's ability to fill the space.
 #vidcontain {
     padding-bottom: 56.25%;
     position: relative;
@@ -362,7 +369,7 @@ article {
 
         h3 {
             font-size: $font_small;
-            color: rebeccapurpleclas;
+            color: #fff;
             font-weight: 900;
             font-style: italic;
 
@@ -404,8 +411,6 @@ article {
     }
 }
 
-// add hover effect after media query
-
 #aboutus {
     background-color: rgb(43, 45, 47);
     color: #fff;
@@ -431,7 +436,7 @@ article {
     >section {
         display: grid;
         grid-template-columns: 1fr;
-        grid-auto-rows: 250px;
+        // grid-auto-rows: 250px;
 
         >img {
             max-width: 100%;
@@ -685,7 +690,6 @@ footer {
 
             >a {
                 color: #000;
-
                 font-family: 'Roboto', sans-serif;
                 text-decoration: none;
                 background-color: #fff;
@@ -703,7 +707,6 @@ footer {
                     border: 2px solid black;
                 }
             }
-
         }
     }
 
@@ -711,15 +714,11 @@ footer {
         display: none;
     }
 
-    // .slideshow {
-
-
-    //     img {
-    //         min-height: 900px;
-
-    //     }
-
-    // }
+    .slideshow {
+        img {
+            min-height: 900px;
+        }
+    }
 
     #pcview {
         display: initial;
