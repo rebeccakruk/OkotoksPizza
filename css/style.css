@@ -538,4 +538,62 @@ footer .icons a {
 
 .longmenu {
   background-image: url(/media/tabmenuback.jpeg);
+}
+
+@media only screen and (min-width: 1000px) {
+  #logo {
+    width: 20vh;
+  }
+  nav {
+    font-size: 2.5rem;
+  }
+  #pcview {
+    color: #000;
+  }
+  #pcview > a {
+    display: inline;
+  }
+  .slideshow img {
+    min-height: 800px;
+  }
+  body {
+    background-image: url(/media/logoclose.PNG);
+  }
+  #pcview {
+    display: initial;
+    font-style: "Nothing you could do", cursive;
+    color: limegreen;
+    display: grid;
+  }
+  .header-copy {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-copy > a {
+    pointer-events: none;
+    color: #9C1A26;
+    font-weight: 800;
+  }
+}
+#aboutus {
+  background-color: rgb(43, 45, 47);
+  color: #fff;
+  line-height: 1.8;
+  padding: 5%;
+  display: grid;
+  top: 80vh;
+}
+#aboutus > p {
+  margin-top: 2%;
+}
+
+.foodmenu {
+  background-image: url(/media/backgroundpc.avif);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.foodmenu > h4 {
+  font-size: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
