@@ -125,7 +125,7 @@ nav {
 .slideshow {
     position: relative;
     height: 350px;
-    overflow: hidden;
+    // overflow: hidden;
 
     img {
         position: absolute;
@@ -466,6 +466,7 @@ article {
     display: none;
 
 }
+
 footer {
     border: 2px solid black;
     background-color: #fff;
@@ -607,58 +608,59 @@ footer {
 
 
     .foodmenu {
-    background-image: url(/media/tabmenuback.jpeg);
-    z-index: 1;
-    font-size: 2rem;
-
-    >h4 {
+        background-image: url(/media/tabmenuback.jpeg);
+        z-index: 1;
         font-size: 2rem;
-    }
+
+        >h4 {
+            font-size: 2rem;
+        }
     }
 
     .longmenu {
-    background-image: url(/media/tabmenuback.jpeg);
+        background-image: url(/media/tabmenuback.jpeg);
     }
 
 
-#hidden {
-    display: initial;
-    width: 100%;
-    ;
+    #hidden {
+        display: initial;
+        width: 100%;
+        ;
 
 
-    .pcgallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit(minmax 350px 1fr));
-        border: 1px solid #ccc;
-        position: relative;
-        left: 40%;
+        .pcgallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit(minmax 350px 1fr));
+            border: 1px solid #ccc;
+            position: relative;
+            left: 40%;
 
-        &:hover {
-            border: 1px solid black
+            &:hover {
+                border: 1px solid black
+            }
+
+            >img {
+                width: 100%;
+                height: auto;
+                // padding: 10px;
+            }
         }
 
-        >img {
-            width: 100%;
-            height: auto;
-            // padding: 10px;
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
         }
     }
 
-    .responsive {
-        padding: 0 6px;
-        float: left;
-        width: 24.99999%;
+    body {
+        background-image: url(/media/woodgrain.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
     }
-}
-body {
-    background-image: url(/media/woodgrain.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-}
 }
 
 // ************************************** PC ******************************************************
@@ -672,16 +674,18 @@ body {
         font-size: 2.5rem;
         height: 100%;
         display: grid;
-            grid-template-columns:1fr 1fr 1fr;
-            grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+
         #pcview {
             display: initial;
-            position:absolute;
+            position: absolute;
             bottom: 0;
             right: 10;
+
             >a {
                 color: #000;
-                
+
                 font-family: 'Roboto', sans-serif;
                 text-decoration: none;
                 background-color: #fff;
@@ -692,29 +696,30 @@ body {
                 margin: 4px 2px;
                 transition-duration: 0.4s;
                 cursor: pointer;
+
                 &:hover {
                     background-color: #9C1A26;
                     color: #fff;
                     border: 2px solid black;
                 }
+            }
+
         }
-        
-    }
     }
 
     #menu {
         display: none;
     }
 
-    .slideshow {
+    // .slideshow {
 
 
-        img {
-            min-height: 900px;
+    //     img {
+    //         min-height: 900px;
 
-        }
+    //     }
 
-    }
+    // }
 
     #pcview {
         display: initial;
@@ -735,49 +740,50 @@ body {
             font-weight: 800;
         }
     }
-        .foodmenu {
-            background-image: url(/media/backgroundpc.avif);
-            z-index: 1;
+
+    .foodmenu {
+        background-image: url(/media/backgroundpc.avif);
+        z-index: 1;
+        font-size: 2rem;
+
+        >h4 {
             font-size: 2rem;
-    
-            >h4 {
-                font-size: 2rem;
-            }
         }
-    
-        .longmenu {
-            background-image: url(/media/backgroundpc.avif);
-        }
-
-#aboutus {
-    background-color: rgb(43, 45, 47);
-    color: #fff;
-    line-height: 1.8;
-    padding: 5%;
-    display: grid;
-    top: 80vh;
-
-    >p {
-        margin-top: 2%;
-        font-size: 1.5em;
     }
-}
+
+    .longmenu {
+        background-image: url(/media/backgroundpc.avif);
+    }
+
+    #aboutus {
+        background-color: rgb(43, 45, 47);
+        color: #fff;
+        line-height: 1.8;
+        padding: 5%;
+        display: grid;
+        top: 80vh;
+
+        >p {
+            margin-top: 2%;
+            font-size: 1.5em;
+        }
+    }
 
 
-.ourteam {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    .ourteam {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-.aboutpage {
-    background-color: #000;
-    text-align: center;
-    padding: 1em;
+    .aboutpage {
+        background-color: #000;
+        text-align: center;
+        padding: 1em;
 
-}
+    }
 
-#pcpictures {
-    display: initial;
-}
+    #pcpictures {
+        display: initial;
+    }
 
 }
