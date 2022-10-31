@@ -313,7 +313,7 @@ nav #menu:focus-within #dropdown {
   position: relative;
   height: 0;
 }
-#vidcontain > iframe {
+#vidcontain iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -321,7 +321,28 @@ nav #menu:focus-within #dropdown {
   height: 100%;
 }
 
-article > .longmenu {
+.button {
+  background-color: #000;
+  border: #fff 1px solid;
+  font-size: 0.5rem;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 4px 8px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  text-decoration: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+article .longmenu {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -604,30 +625,24 @@ footer .icons a {
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     background-color: #fff;
-    padding: 16px 32px;
+    padding: 7px 16px;
     text-align: center;
     display: inline-block;
     font-size: 22px;
-    margin: 4px 2px;
+    margin: 3px 1.5px;
     transition-duration: 0.4s;
     cursor: pointer;
   }
   nav #pcview > a:hover {
     background-color: #9C1A26;
     color: #fff;
-    border: 2px solid black;
+    border: 1px solid black;
   }
   #menu {
     display: none;
   }
   .slideshow img {
     min-height: 900px;
-  }
-  #pcview {
-    display: initial;
-    font-style: "Nothing you could do", cursive;
-    color: limegreen;
-    display: grid;
   }
   .header-copy {
     display: grid;
